@@ -8,7 +8,8 @@ class DishDetail extends Component {
   }
 
   renderComments(comments) {
-    if (comments == null) return <div>No comments on this plate</div>;
+    if (comments == null) return <div></div>;
+    // Iterate comments and return elements as li items
     const CustComments = comments.map((element) => {
       return (
         <div key={element.id}>
@@ -22,9 +23,7 @@ class DishDetail extends Component {
 
     return (
       <div>
-        <h6 className="text-center text-muted text-uppercase my-3">
-          Customers Review
-        </h6>
+        <h4 className="text-center text-muted text-uppercase my-3">Comments</h4>
         <ul className="list-unstyled">{CustComments}</ul>
       </div>
     );
@@ -32,15 +31,7 @@ class DishDetail extends Component {
   // end of renderComments
 
   renderDish(dish) {
-    if (dish == null)
-      return (
-        <div className="row justify-content-center">
-          <span className="text-muted text-center my-4 text-uppercase">
-            No dish has been selected so far
-          </span>
-        </div>
-      );
-
+    if (dish == null) return <div></div>;
     return (
       <div className="row my-1">
         <div className="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 m-1">
@@ -59,6 +50,7 @@ class DishDetail extends Component {
       </div>
     );
   }
+  // End of render dish
 
   render() {
     return <div>{this.renderDish(this.props.selectedDish)}</div>;
