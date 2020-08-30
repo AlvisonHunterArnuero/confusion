@@ -1,37 +1,46 @@
 .bold-text {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.row-header{
-    margin:0px auto;
-    padding:0px auto;
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
 }
 
 .row-content {
-    margin:0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height:400px;
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
 }
 
-.footer{
-    background-color: #D1C4E9;
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
+.footer {
+  background-color: #14213d;
+  color: #fbfffe;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.footer a {
+  color: #fbfffe;
 }
 .jumbotron {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
-    background: #9575CD ;
-    color:floralwhite;
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: #17c3b2;
+  color: floralwhite;
 }
 
-address{
-    font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: floralwhite;
 }
 
 .navbar-dark {
-    background-color: #512DA8;
+  background-color: #364958;
+}
+
+.grayscale {
+  filter: grayscale(100%);
 }
